@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(25,25,25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2{
+    color: #fff;
+    margin: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.buttons-container {
+    margin-left: 1.2rem;
+    width: 28.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 1.8rem;
+    cursor: pointer;
+}
+
+.image-emote {
+    width: 4.35rem;
+}
+
+/*Choice's style*/
+.container-choice {
+    display: flex;
+    align-items: column;
+    margin-bottom: 1.2px;
+}
+
+.choice {
+    width: 4.35rem;
+    height: 4.35rem;
+    padding: 1.9rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 1.2rem;
+}
+
+/*Results's style*/
+
+.flex-result {
+    display: flex;
+
+}
+
+.container-text-winner {
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultado-container {
+    width: 4.35rem;
+    height: 4.35rem;
+    padding: 1.8rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+
+
+/*Point's style*/
+
+.container-info {
+    display: flex;
+    margin: 40px 20px;
+}
+
+.container-info div {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/*Button's style*/
+
+.button-reset {
+    padding: 1.2rem;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 1.2rem;
+    border: none;
+    transition: color 0.5s;
+}
+
+.button-reset:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid 0.1rem #fff;
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 678px) {
+    html {
+        font-size: 60%;
+    }
+}

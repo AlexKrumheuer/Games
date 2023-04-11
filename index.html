@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games || Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/games.png" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Escolha o Jogo</h1>
+    <section>
+        <div class="game-container">
+            <div class="game-title">
+                <h2>Pedra Papel Tesoura</h2>
+            </div>
+            <div class="game-container-image">
+                <img class="game-image" src="img/rock-paper-scissor.png" alt="Pedra, Papel e tesoura imagem">
+            </div>
+            <div>
+                <button onclick="changePage(0)" class="button-play">Jogar</button>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="game-title">
+                <h2>Whack a mole</h2>
+            </div>
+            <div class="game-container-image">
+                <img class="game-image" src="img/whac-a-mole.png" alt="Pedra, Papel e tesoura imagem">
+            </div>
+            <div>
+                <button onclick="changePage(1)" class="button-play">Jogar</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        function changePage(indexButton) {
+            if(indexButton == "0") {
+                window.location.href = "Rock paper scissor/rock-paper-scissor.html"
+            } else {
+                window.location.href = "Whac-a-mole/whac-a-mole.html"   
+            }
+        }
+    </script>
+</body>
+</html>

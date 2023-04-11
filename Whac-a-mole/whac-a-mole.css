@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: #000;
+}
+
+.main {    
+    width: 100vw;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-time {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.data-container {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    text-align: center;
+}
+
+.container-button-start {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.button-start {
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.button-start:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.reward {
+    height: 100%;
+    width: 5rem;
+    margin-left: 6rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.game-display {
+    height: 30rem;
+    width: 30rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+}
+
+.square {
+    width: 9rem;
+    height: 9rem;
+    border: 1px solid #fff;
+}
+
+.mole {
+    background-color: #fff;
+}
+
+@media(max-width: 1200px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media(max-width: 900px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 678px) {
+    html {
+        font-size: 70%;
+    }
+}

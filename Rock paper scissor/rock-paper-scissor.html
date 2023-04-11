@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+
+    <link rel="stylesheet" href="rock-paper-scissor.css">
+    <link rel="shortcut icon" href="img/scissors.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Rock paper scissor</h1>
+     <div class="buttons-container">
+        <button onclick="playGame('0')" class="button">
+            <img class="image-emote" src="img/rock-emoji.png" alt="Emoji da Pedra">
+         </button>
+         <button onclick="playGame('1')" class="button">
+            <img class="image-emote" src="img/paper-emoji.png" alt="Emoji do Papel">
+         </button>
+         <button onclick="playGame('2')" class="button">
+            <img class="image-emote" src="img/scissors-emoji.png" alt="Emoji da Tesoura">
+         </button>
+     </div>
+
+     <div class="container-choice" >
+         <div>
+            <div class="choice">
+               <img id="player-choice" class="image-emote" src="">
+            </div>
+            <h2>You</h2>
+         </div>
+         <div>
+            <div class="choice">
+               <img id="computer-choice" class="image-emote" src="">
+            </div>
+            <h2>Computer</h2>
+         </div>
+     </div>
+
+     <div class="flex-result">
+         <div class="container-text-winner">
+            <h2 class="text-winner" id="text-winner">The winner was: <span id="text-winner"></span></h2>
+            <div class="container-info">
+               <div>Wins: <span id="value-wins">0</span></div>
+               <div>Losses: <span id="value-losses">0</span></div>
+               <div>Ties: <span id="value-ties">0</span></div>
+            </div>
+         </div>
+         <div class="resultado-container" id="resultado">
+            <img class="image-emote" id="image-result" src="">
+         </div>  
+     </div> 
+
+     <button class="button-reset" onclick="reset()">Reset Score</button>
+     
+
+
+    <script src="rock-paper-scissor.js"></script>
+</body>
+</html>
